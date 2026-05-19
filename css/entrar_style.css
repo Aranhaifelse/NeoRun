@@ -16,8 +16,8 @@ body{
 }
 
 
-.card-login{
-    width:370px;
+.card-entrar{
+    width:350px;
     padding:45px 35px;
     background:#111;
     border:1px solid #222222;
@@ -40,9 +40,7 @@ body{
 }
 
 
-
-
-.titulo-login{
+.titulo-entrar{
     color:#ffffff;
     margin-bottom:25px;
 }
@@ -71,53 +69,39 @@ body{
 }
 
 
-.icone{
-    position:absolute;
-    right:12px;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:14px;
-    color:#058d00;
-}
-
 .botao-entrar{
     color: #000000;
     width:100%;
     padding:10px 120px;
     border:none;
-    border-radius:20px;
+    border-radius:10px;
     background:#07be01;
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
-    margin-top: 0px;
 }
-
 .botao-entrar:hover{
     background:#74ff33;
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
-
-
-.links-login{
+.links-entrar{
     margin-top:22px;
     display:flex;
     flex-direction:column;
     gap:8px;
 }
 
-.links-login a{
+.links-entrar a{
     text-decoration:none;
     font-size:14px;
     color:#aaa;
     transition:0.3s;
 }
 
-.links-login a:hover{
+.links-entrar a:hover{
     color:#2bff00;
 }
 
 .criar-conta{
     font-weight:bold;
 }
-

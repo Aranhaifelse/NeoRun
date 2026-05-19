@@ -115,8 +115,43 @@ ul {
 }
 
 .menu a:hover {
-    color: var(--verde-secundario);
+    color: var(--verde-destaque);
     
+}
+
+.area-login{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao-entrar{
+    color:  rgba(255,255,255,0.7);
+    position: relative;
+    padding: 5px 20px; 
+    font-family: var(--fonte-condesed);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.35s ease;
+}
+.botao-entrar::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--verde-destaque);
+    transform: translateX(-50%) scaleX(0);
+    transition: 0.35s ease;
+}
+.botao-entrar:hover{
+    color: var(--verde-destaque);
+}
+.botao-entrar:hover::after{
+     transform: translateX(0%) scaleX(1);
 }
 
 /* Botão "Comece Já" */

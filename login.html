@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="css/entrar_style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Login - NeoRun</title>
 </head>
 <body>
 
-    <main class="pagina-login">
+    <main class="pagina-entrar">
 
-        <section class="card-login">
+        <section class="card-entrar">
 
-            <h1 class="titulo-login">Login</h1>
+            <h1 class="titulo-entrar">Login</h1>
 
             <form action="home.html" method="POST">
                 <div class="grupo-input">
-                    <input type="email" placeholder="Email" required>
-                    <span class="icone">✉</span>
+                    <input type="email" placeholder="✉ Email" autocomplete="email"  required>
                 </div>
 
                 <div class="grupo-input">
-                    <input type="password" placeholder="Senha" required>
-                    <span class="icone">🔒</span>
+                    <input type="password" name="senha" id="iSenha" placeholder="🔒 Senha" minlength="8" autocomplete="current-password"  required>
                 </div>
                 
-               <a href="cadastrado.html" class="botao-login">Entrar</a>
+               <input type="submit" value="Entrar" class="botao-entrar">
             </form>
 
-            <div class="links-login">
+            <div class="links-entrar">
                 <a href="#">Esqueci minha senha</a>
                 <a href="cadastro.html" class="criar-conta">Criar nova Conta</a>
             </div>

@@ -16,7 +16,7 @@ body{
 }
 
 
-.card-login{
+.card-cadastro{
     width:370px;
     padding:45px 35px;
     background:#111;
@@ -40,9 +40,7 @@ body{
 }
 
 
-
-
-.titulo-login{
+.titulo-cadastro{
     color:#ffffff;
     margin-bottom:25px;
 }
@@ -71,53 +69,40 @@ body{
 }
 
 
-.icone{
-    position:absolute;
-    right:12px;
-    top:50%;
-    transform:translateY(-50%);
-    font-size:14px;
-    color:#058d00;
-}
-
-.botao-entrar{
+.botao-cadastro{
     color: #000000;
     width:100%;
     padding:10px 120px;
     border:none;
-    border-radius:20px;
+    border-radius:10px;
     background:#07be01;
     font-weight:bold;
     cursor:pointer;
     transition:0.3s;
-    margin-top: 0px;
 }
 
-.botao-entrar:hover{
+.botao-cadastro:hover{
     background:#74ff33;
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
-
-
-.links-login{
+.links-cadastro{
     margin-top:22px;
     display:flex;
     flex-direction:column;
     gap:8px;
 }
 
-.links-login a{
+.links-cadastro a{
     text-decoration:none;
     font-size:14px;
     color:#aaa;
     transition:0.3s;
 }
 
-.links-login a:hover{
+.links-cadastro a:hover{
     color:#2bff00;
 }
 
 .criar-conta{
     font-weight:bold;
 }
-
