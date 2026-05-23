@@ -62,7 +62,7 @@
                     </span>
                     <div class="link-plano-equipe">
                         <a href="#areaplanos" tabindex="8" class="link-plano">Ver Planos</a>
-                        <a href="" tabindex="9" class="link-equipe">Conheça a equipe</a>
+                        <a href="#equipe" tabindex="9" class="link-equipe" >Conheça a equipe</a>
                     </div>
                 </div>
                 
@@ -118,7 +118,7 @@
                         <ul>
                             <li tabindex="20">Psicólogo</li>
                             <li tabindex="21">Nutricionista</li>
-                            <li tabindex="22">Fisioterapeuta</li>
+                            <li tabindex="22" id="equipe">Fisioterapeuta</li>
                         </ul>
                     </div>
                     
@@ -130,7 +130,7 @@
         <section class="equipe" aria-labelledby="titulo-equipe">
             <div class="titulos">
                 <h3>ESPECIALISTAS</h3>
-                <h2 tabindex="23">NOSSA EQUIPE</h2>
+                <h2  tabindex="23">NOSSA EQUIPE</h2>
                 <hr>
             </div>
             <div class="membros">
@@ -168,75 +168,525 @@
 
                 <article class="card" tabindex="25">
                     <div class="normal">
-                        <div class="classe">
-                            <h4>BÁSICO</h4>
-                        </div>
-                        <img src="img/weakness.png" id="verde-baixo" alt="Ícone de nível básico representando o Plano Uno">
                         
-                        <h3>PLANO UNO</h3>
+                        <img src="img/weakness.png"  alt="Ícone de nível básico representando o Plano Uno">
+                        
+                        <h3>PLANO SINGLE</h3>
                         <div class="card-preco">
-                            <h2><span>R$</span>49<span>,99/mês</span></h2>
+                            <h2><span>R$</span> 49 <span>,99/mês</span></h2>
                         </div>
                         <ul>
                             <li class="check">Consultoria Especializada</li>
                             <li class="check">Treino personalizado</li>
-                            <li class="check">Foco em Corrida</li>
-                            <li class="bloqueio">Foco em Musculação</li>
-                            <li class="bloqueio">Foco em Natação</li>
+                            <li class="check">Foco em 1 modalidade</li>
+                            <li class="bloqueio">Planejamento de provas</li>
+                            <li class="bloqueio">Ajuste de Suplementação Intra-treino</li>
                         </ul>
-                        <a href="" tabindex="26" class="butao-secundario">Saiba mais</a>
+                        <a href="#saiba1" tabindex="26" class="butao-secundario">Saiba mais</a>
                     </div>
+                    <section class="saiba-mais1">
+                    <div id="saiba1" class="overlay">
+                            <div class="modal-overlay">
+                                <div class="checkout-container">
+                                    <a href="#areaplanos" class="close-btn"  aria-label="Fechar">
+                                        ✕
+                                    </a>
+                            
+                                    <main class="main-card">
+                                        <section class="left-section">
+                                            <div class="tag">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v.01"/><path d="m14 18-1-5 2-1.5"/><path d="m16 22-2-4"/><path d="m8 22 2-4-2-3-3-1"/><path d="m11.5 8-2 1-1 4"/><path d="M12 11h3l2-2"/></svg>
+                                                PLANO SINGLE
+                                            </div>
+                            
+                                            <h1 class="title">
+                                                Corra mais longe.<br>
+                                                <span class="highlight">Supere seus limites.</span>
+                                            </h1>
+                            
+                                            <p class="subtitle">Um plano completo para todos os níveis de corredores que buscam evolução, saúde e performance.</p>
+                            
+                                            <div class="price-box">
+                                                <span class="price-label">POR APENAS</span>
+                                                <div class="price-value">R$ 49,99<span class="period">/mês</span></div>
+                                                <p class="cancel-text">Cancelamento fácil<br>a qualquer momento.</p>
+                                                <button class="cta-button">Assinar agora</button>
+                                                <div class="secure-payment">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                                    Pagamento seguro e protegido
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="right-section">
+                                            <h2 class="benefits-title">O que está incluso em <span class="text-green">todos</span> os planos:</h2>
+                                            <ul class="benefits-list">
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Planilha Completa e Personalizada</strong>
+                                                        <p> Treinos periodizados e estruturados por profissionais especializados na sua modalidade.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong> Acompanhamento Presencial</strong>
+                                                        <p> Treine com nossa equipe na tenda presencial durante a semana.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Sessões de Fortalecimento</strong>
+                                                        <p>Acesso a treinos funcionais e fortalecimento muscular voltados para endurance.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Acompanhamento de Performance</strong>
+                                                        <p>Monitoramento constante da evolução com feedbacks e ajustes estratégicos.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Benefícios Exclusivos</strong>
+                                                        <p>Descontos e vantagens em parceiros, eventos e produtos esportivos.</p>
+                                                    </div>
+                                                </li>
+                            
+                                            </ul>
+                                        </section>
+                                        <section class="right-section">
+                                            <h2 class="benefits-title">O que está incluso neste plano:</h2>
+                                            <ul class="benefits-list">
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Escolha de 1 modalidade:</strong>
+                                                        <p>Corrida / Ciclismo / Natação</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Ajustes periódicos da planilha</strong>
+                                                        <p>Acesso a treinos atualizados e periodizados.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="block-icon">✘</span>
+                                                    <div class="benefit-text">
+                                                        <strong class="block-text">Integração estratégica entre treinos</strong>
+                                                        <p>(ex: corrida + ciclismo sem conflito de carga)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="block-icon">✘</span>
+                                                    <div class="benefit-text">
+                                                        <strong  class="block-text">Planejamento voltado para provas combinadas</strong>
+                                                        <p>(duathlon, aquathlon, etc.)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="block-icon">✘</span>
+                                                    <div class="benefit-text">
+                                                        <strong class="block-text">Acompanhamento de nutrição intra-treino</strong>
+                                                        <p>Hidratação, carboidrato e suplementação durante sessões e provas</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="block-icon">✘</span>
+                                                    <div class="benefit-text">
+                                                        <strong class="block-text">Consultoria para equipamentos e estratégia de prova</strong>
+                                                        <p>Benefícios exclusivos em lojas e eventos parceiros.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </main>
+                            
+                                    <div class="trust-bar">
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>7 dias de garantia</strong>
+                                                <p>Satisfação garantida</p>
+                                            </div>
+                                        </div>
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>Cancelamento fácil</strong>
+                                                <p>A qualquer momento</p>
+                                            </div>
+                                        </div>
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>Suporte dedicado</strong>
+                                                <p>Estamos aqui para ajudar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
                 </article>
 
                 <article class="card" tabindex="27">
                     <div class="pop">
                         <div class="classe-popular">
                             <h4 class="popular">MAIS POPULAR</h4>
-                            <h4 class="nivel">INTERMEDIÁRIO</h4>
-                        
                         </div>
                         
                         <div class="conjunto-classe">
-                            <img src="img/biceps.png" id="amarelo-medio" alt="Ícone de bíceps representando o nível intermediário do Plano Duo">
+                            <img src="img/biceps.png"  alt="Ícone de bíceps representando o nível intermediário do Plano Duo">
                         
                         </div>
                         
                         <h3>PLANO DUO</h3>
                         <div class="card-preco">
-                            <h2><span>R$</span> 99<span>,99/mês</span></h2>
+                            <h2><span>R$</span> 99 <span>,99/mês</span></h2>
                         </div>
                         <ul>
                             <li class="check">Consultoria Especializada</li>
                             <li class="check">Treino personalizado</li>
-                            <li class="check">Foco em Corrida</li>
-                            <li class="check">Foco em Musculação</li>
-                            <li class="bloqueio">Foco em Natação</li>
+                            <li class="check">Foco em 2 modalidades</li>
+                            <li class="check">Planejamento de provas</li>
+                            <li class="bloqueio">Ajuste de Suplementação Intra-treino</li>
                         </ul>
-                        <a href="" tabindex="28" class="botao-primario">Saiba mais</a>
+                        <a href="#saiba2" tabindex="28" class="botao-primario">Saiba mais</a>
                     </div>
+                    <section class="saiba-mais2">
+                    <div id="saiba2" class="overlay">
+                            <div class="modal-overlay">
+                                <div class="checkout-container">
+                                    <a href="#areaplanos" class="close-btn"  aria-label="Fechar">
+                                        ✕
+                                    </a>
+                            
+                                    <main class="main-card">
+                                        <section class="left-section">
+                                            <div class="tag">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v.01"/><path d="m14 18-1-5 2-1.5"/><path d="m16 22-2-4"/><path d="m8 22 2-4-2-3-3-1"/><path d="m11.5 8-2 1-1 4"/><path d="M12 11h3l2-2"/></svg>
+                                                PLANO DUO
+                                            </div>
+                            
+                                            <h1 class="title">
+                                                Corra mais longe.<br>
+                                                <span class="highlight">Supere seus limites.</span>
+                                            </h1>
+                            
+                                            <p class="subtitle">Um plano completo para todos os níveis de corredores que buscam evolução, saúde e performance.</p>
+                            
+                                            <div class="price-box">
+                                                <span class="price-label">POR APENAS</span>
+                                                <div class="price-value">R$ 99,99<span class="period">/mês</span></div>
+                                                <p class="cancel-text">Cancelamento fácil<br>a qualquer momento.</p>
+                                                <button class="cta-button">Assinar agora</button>
+                                                <div class="secure-payment">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                                    Pagamento seguro e protegido
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="right-section">
+                                            <h2 class="benefits-title">O que está incluso em <span class="text-green">todos</span> os planos:</h2>
+                                            <ul class="benefits-list">
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Planilha Completa e Personalizada</strong>
+                                                        <p> Treinos periodizados e estruturados por profissionais especializados na sua modalidade.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong> Acompanhamento Presencial</strong>
+                                                        <p> Treine com nossa equipe na tenda presencial durante a semana.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Sessões de Fortalecimento</strong>
+                                                        <p>Acesso a treinos funcionais e fortalecimento muscular voltados para endurance.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Acompanhamento de Performance</strong>
+                                                        <p>Monitoramento constante da evolução com feedbacks e ajustes estratégicos.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Benefícios Exclusivos</strong>
+                                                        <p>Descontos e vantagens em parceiros, eventos e produtos esportivos.</p>
+                                                    </div>
+                                                </li>
+                            
+                                            </ul>
+                                        </section>
+                                        <section class="right-section">
+                                            <h2 class="benefits-title">O que está incluso neste plano:</h2>
+                                            <ul class="benefits-list">
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Escolha de 1 modalidade:</strong>
+                                                        <p>Corrida / Ciclismo / Natação</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Ajustes periódicos da planilha</strong>
+                                                        <p>Acesso a treinos atualizados e periodizados.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong >Integração estratégica entre treinos</strong>
+                                                        <p>(ex: corrida + ciclismo sem conflito de carga)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Planejamento voltado para provas combinadas</strong>
+                                                        <p>(duathlon, aquathlon, etc.)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="block-icon">✘</span>
+                                                    <div class="benefit-text">
+                                                        <strong class="block-text">Acompanhamento de nutrição intra-treino</strong>
+                                                        <p>Hidratação, carboidrato e suplementação durante sessões e provas</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="block-icon">✘</span>
+                                                    <div class="benefit-text">
+                                                        <strong class="block-text">Consultoria para equipamentos e estratégia de prova</strong>
+                                                        <p>Benefícios exclusivos em lojas e eventos parceiros.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </main>
+                            
+                                    <div class="trust-bar">
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>7 dias de garantia</strong>
+                                                <p>Satisfação garantida</p>
+                                            </div>
+                                        </div>
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>Cancelamento fácil</strong>
+                                                <p>A qualquer momento</p>
+                                            </div>
+                                        </div>
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>Suporte dedicado</strong>
+                                                <p>Estamos aqui para ajudar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </article>
 
                 <article class="card" tabindex="29">
                    
                     <div class="normal">
-                        <div class="classe">
-                            <h4>AVANÇADO</h4>
-                        </div>
-                        <img src="img/muscle.png" id="vermelho-alto" alt="Ícone de músculo representando o nível avançado do Plano Tri">
+                        <img src="img/muscle.png" alt="Ícone de músculo representando o nível avançado do Plano Tri">
                         
                         <h3>PLANO TRI</h3>
                         <div class="card-preco">
-                            <h2><span>R$</span>149<span>,99/mês</span></h2>
+                            <h2><span>R$</span> 149 <span>,99/mês</span></h2>
                         </div>
                         <ul>
                             <li class="check">Consultoria Especializada</li>
                             <li class="check">Treino personalizado</li>
-                            <li class="check">Foco em Corrida</li>
-                            <li class="check">Foco em Musculação</li>
-                            <li class="check">Foco em Natação</li>
+                            <li class="check">Foco em 3 modalidades</li>
+                            <li class="check">Planejamento de provas</li>
+                            <li class="check">Ajsute de Suplementação Intra-treino</li>
                         </ul>
-                        <a href="" tabindex="30" class="butao-secundario">Saiba mais</a>
+                        <a href="#saiba3" tabindex="30" class="butao-secundario">Saiba mais</a>
                     </div>
+                    <section class="saiba-mais3">
+                    <div id="saiba3" class="overlay">
+                            <div class="modal-overlay">
+                                <div class="checkout-container">
+                                    <a href="#areaplanos" class="close-btn"  aria-label="Fechar">
+                                        ✕
+                                    </a>
+                            
+                                    <main class="main-card">
+                                        <section class="left-section">
+                                            <div class="tag">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v.01"/><path d="m14 18-1-5 2-1.5"/><path d="m16 22-2-4"/><path d="m8 22 2-4-2-3-3-1"/><path d="m11.5 8-2 1-1 4"/><path d="M12 11h3l2-2"/></svg>
+                                                PLANO TRI
+                                            </div>
+                            
+                                            <h1 class="title">
+                                                Corra mais longe.<br>
+                                                <span class="highlight">Supere seus limites.</span>
+                                            </h1>
+                            
+                                            <p class="subtitle">Um plano completo para todos os níveis de corredores que buscam evolução, saúde e performance.</p>
+                            
+                                            <div class="price-box">
+                                                <span class="price-label">POR APENAS</span>
+                                                <div class="price-value">R$ 149,99<span class="period">/mês</span></div>
+                                                <p class="cancel-text">Cancelamento fácil<br>a qualquer momento.</p>
+                                                <button class="cta-button">Assinar agora</button>
+                                                <div class="secure-payment">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                                    Pagamento seguro e protegido
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section class="right-section">
+                                            <h2 class="benefits-title">O que está incluso em <span class="text-green">todos</span> os planos:</h2>
+                                            <ul class="benefits-list">
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Planilha Completa e Personalizada</strong>
+                                                        <p> Treinos periodizados e estruturados por profissionais especializados na sua modalidade.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong> Acompanhamento Presencial</strong>
+                                                        <p> Treine com nossa equipe na tenda presencial durante a semana.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Sessões de Fortalecimento</strong>
+                                                        <p>Acesso a treinos funcionais e fortalecimento muscular voltados para endurance.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Acompanhamento de Performance</strong>
+                                                        <p>Monitoramento constante da evolução com feedbacks e ajustes estratégicos.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Benefícios Exclusivos</strong>
+                                                        <p>Descontos e vantagens em parceiros, eventos e produtos esportivos.</p>
+                                                    </div>
+                                                </li>
+                            
+                                            </ul>
+                                        </section>
+                                        <section class="right-section">
+                                            <h2 class="benefits-title">O que está incluso neste plano:</h2>
+                                            <ul class="benefits-list">
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Escolha de 1 modalidade:</strong>
+                                                        <p>Corrida / Ciclismo / Natação</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Ajustes periódicos da planilha</strong>
+                                                        <p>Acesso a treinos atualizados e periodizados.</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Integração estratégica entre treinos</strong>
+                                                        <p>(ex: corrida + ciclismo sem conflito de carga)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong >Planejamento voltado para provas combinadas</strong>
+                                                        <p>(duathlon, aquathlon, etc.)</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Acompanhamento de nutrição intra-treino</strong>
+                                                        <p>Hidratação, carboidrato e suplementação durante sessões e provas</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="check-icon">✔</span>
+                                                    <div class="benefit-text">
+                                                        <strong>Consultoria para equipamentos e estratégia de prova</strong>
+                                                        <p>Benefícios exclusivos em lojas e eventos parceiros.</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </main>
+                            
+                                    <div class="trust-bar">
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>7 dias de garantia</strong>
+                                                <p>Satisfação garantida</p>
+                                            </div>
+                                        </div>
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>Cancelamento fácil</strong>
+                                                <p>A qualquer momento</p>
+                                            </div>
+                                        </div>
+                                        <div class="trust-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                                            <div class="trust-text">
+                                                <strong>Suporte dedicado</strong>
+                                                <p>Estamos aqui para ajudar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </article>
 
             </div>

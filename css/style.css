@@ -459,9 +459,6 @@ ul {
     
 }
 
-
-
-
 .membros img {
     width: 100%;
     height: 100%;
@@ -489,8 +486,6 @@ ul {
     background-color: var(--preto-escuro);
     scroll-margin-top: 20px;
 }
-
-
 /* Grid de cards */
 .cards {
     display: flex;
@@ -528,32 +523,27 @@ ul {
 
 .card  img {
     height: 50px;
-
-    margin: 0 auto 10px;
+    margin: 30px auto;
     background-color: var(--verde-destaque);
     border-radius: 30%;
     padding: 5px;
 }
 
-.classe-popular .popular{
+.popular{
+    position: absolute;
     color: #09090b;
     background-color: var(--verde-destaque);
     padding: 7px;
     border-radius: 15px;
     box-shadow: 0 0px 32px rgba(162, 230, 53, 0.438);
-    transform: translate(0%, -60%);
+    transform: translate(20%, -50%);
 }
 .classe-popular{
     display: flex;
-    justify-content: space-between;
     font-family: var(--fonte-condesed);
-    padding: 10px;
     font-size: 15px;
 }
-.classe-popular .nivel{
-    padding: 10px;
-    color: gray;
-}
+
 .conjunto-classe{
     display: flex;
     justify-content: space-between;
@@ -567,14 +557,7 @@ ul {
     font-weight: normal;
 }
 
-.classe{
-    display: flex;
-    justify-content: end;
-    color: gray;
-    padding: 20px;
-    font-family: var(--fonte-condesed);
-    font-size: 15px;
-}
+
 .card h3 {
     margin-bottom: 10px;
     font-family: var(--fonte-plus);
@@ -616,6 +599,7 @@ ul {
     line-height: 30px;
     padding-left: 4px;
     margin-left: 15%;
+    word-spacing: 3px;
 }
 
 .card ul .check {
@@ -668,6 +652,327 @@ ul {
     background-color: var(--verde-destaque) ;
     color:black;
     
+}
+
+/* ─────────────────────────────────────────────────────
+   SAIBA MAIS SOBREPOSTO
+───────────────────────────────────────────────────── */
+.overlay{
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    background-color: #09090b79;
+    backdrop-filter: blur(5px);
+    
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.5s;
+}
+.overlay:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-overlay {
+    background-color: var(--preto-escuro);
+    max-height: 900px;
+    width: 90%;
+    margin: 10px 0px;
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding: 2.5rem;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.9rem;
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-btn:hover {
+    color: #fff;
+}
+
+
+.main-card {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to right, rgba(9, 9, 11, 0.9), rgba(9, 9, 11, 0.1));
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 2rem;
+    position: relative;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--verde-primario);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 1px solid var(--verde-primario);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    width: fit-content;
+    margin-bottom: 2rem;
+    background: rgba(63, 168, 49, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.title .highlight {
+    color: var(--verde-primario);
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #999;
+    max-width: 350px;
+    line-height: 1.5;
+    margin-bottom: auto;
+}
+
+
+.price-box {
+    background-color: var(--preto-claro);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-color: var(--verde-primario);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 280px;
+    margin-top: 2rem;
+}
+
+.price-label {
+    font-size: 0.8rem;
+    color: #aaa;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.price-value {
+    font-family: var();
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1rem;
+}
+
+.price-value .period {
+    font-family: var(--fonte-plus);
+    font-size: 1rem;
+    color: #aaa;
+    margin-left: 0.2rem;
+    font-weight: 400;
+}
+
+.cancel-text {
+    font-size: 0.85rem;
+    color: #aaa;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    width: 100%;
+    background-color: var(--verde-secundario);
+    color: #fff;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-bottom: 1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--verde-destaque);
+    transform: scale(1.02);
+}
+
+.secure-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+
+.right-section {
+    flex: 1;
+    background-color: var(--preto-claro);
+    border-radius: 12px;
+    padding: 2.5rem;
+}
+
+.text-green{
+    color: var(--verde-primario);
+}
+.benefits-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.benefits-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.check-icon {
+    color: var(--verde-primario);
+    margin-top: 0.2rem;
+}
+ .block-icon{
+    color: crimson;
+ }
+.benefit-icon-container {
+    background-color: rgba(63, 168, 49, 0.15);
+    color: var(--verde-primario);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefit-icon-container svg {
+    width: 18px;
+    height: 18px;
+}
+
+.benefit-text strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+    word-spacing: 3px;
+}
+.block-text{
+    color: grey;
+}
+.benefit-text p {
+    font-size: 0.85rem;
+    color: #999;
+    line-height: 1.4;
+}
+
+
+.trust-bar {
+    background-color: var(--preto-claro);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trust-item svg {
+    color: #666;
+}
+
+.trust-text strong {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.trust-text p {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+
+.bottom-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner-text strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.banner-text p {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.outline-btn {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.outline-btn:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 /* ─────────────────────────────────────────────────────
    RODAPÉ
